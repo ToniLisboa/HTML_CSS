@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* Seletores personalizados
+        # = id
+        . = class
+        : = pseudo-classs
+        :: = pseudo-element
+        > = clildren
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: rgb(255, 9, 9);
+        }
+        a:active {
+            color: yellow;
+        }
+        a:visited {
+            color: rgb(36, 160, 5);
+        }
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+       .especial::before{
+        content:'⇒';
+       }
+       .especial::after{
+        content:'⇐';
+       }
+       .especial {
+        background-color: hotpink;
+        color: white;
+       }
+       .classe {
+        width: 50px;
+        height: 50px;
+        border: 1px solid gray;
+        padding: 10px 20px;
+}
+       
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io/">Repositorio GitHub</a></li>
+        <li><a href="https://www.youtube.com/c/CursoemV%C3%ADdeo">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/">Site curso em video</a></li>
+        <li><a href="https://www.elo7.com.br/lilicrochedecor/" class="especial">Loja Online Lili Crochê Decor</a></li>
+        <li><a href="https://www.youtube.com/@YouKids17/"class="especial">Canal do Youtube You Kids Gamer</a></li>
+    </ul>
+    
+</body>
+</html>
