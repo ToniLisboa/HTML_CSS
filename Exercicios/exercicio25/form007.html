@@ -11,6 +11,7 @@
         <p>
             <label for="iest">Estado</label>
             <select name="Estado" id="iest">
+                <option value=""select>---Escolha---</option>
                 <optgroup label="Região Sudeste">
                     <option value="MG">Minas Gerais</option>
                     <option value="RJ">Rio de Janeiro</option>
@@ -25,11 +26,29 @@
             </select>
 
         </p>
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="istprof">
+            
+            <datalist id="istprof">
+                
+                <option value="ADM">Administração</option>
+                <option value="CONT">Contabilista</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="PROF">Professor</option>
+                
+            </datalist>
+
+        </p>
+        <p>
+            <label for="imsg">Mensagem</label>
+            <textarea name="Mensagem" id="imsg" cols="30" plrows="10" placeholder=""></textarea>
+        </p>
 
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
-
+           
         </p>
     </form>
     
